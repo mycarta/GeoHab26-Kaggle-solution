@@ -10,20 +10,18 @@ Shared code, methods, and write-ups from the GeoHab 2026 Machine Learning Workin
 - `pipeline/feature_extraction.py` — Raw TIF → feature CSV extraction [placeholder]
 
 ### Methods modules
-- `methods/geomorphic_features.py` — Standalone geomorphic feature extraction (WhiteboxTools multi-scale) [placeholder]
-- `methods/variogram_loocv.py` — Multi-lag indicator variogram + per-class LOOCV [placeholder]
-- `methods/preflight_screening.py` — Pre-flight screening protocol for spatial LOOCV [placeholder]
-- `methods/bayesian_prior.py` — Bayesian prior adjustment for class probabilities [placeholder]
+- `methods/variogram_loocv.py` — Multi-lag indicator variogram + per-class LOOCV [available]
+- `methods/bayesian_prior.py` — Bayesian prior adjustment for class probabilities [available]
 
 ### Write-ups
-- `writeups/loocv_spatial_cv.md` — Spatial cross-validation methodology [placeholder]
-- `writeups/ecological_hypotheses.md` — Testing two ecological hypotheses [placeholder]
-- `writeups/wave_ray_null.md` — A principled null: wave-ray cumulative focusing [placeholder]
+- `writeups/loocv_spatial_cv.md` — Spatial cross-validation methodology [available]
+- `writeups/ecological_hypotheses.md` — Testing two ecological hypotheses [available]
+- `writeups/wave_ray_null.md` — A principled null: wave-ray cumulative focusing [available]
 - `writeups/negative_results.md` — Negative results and things that didn't work [placeholder]
 - `writeups/monarch_uncertainty.md` — Model confidence report (Monarch framework) [placeholder]
 
 ### Exploratory
-- `random_walker/README.md` — Random walker segmentation exploration [placeholder]
+- `random_walker/README.md` — Random walker segmentation exploration [available]
 
 ### Registry and logs
 - `results_registry.md` — Full submission results registry [available]
