@@ -7,7 +7,6 @@ Shared code, methods, and write-ups from the GeoHab 2026 Machine Learning Workin
 
 ### Pipeline
 - `pipeline/solution_notebook.ipynb` — Full solution pipeline notebook [placeholder]
-- `pipeline/feature_extraction.py` — Raw TIF → feature CSV extraction [placeholder]
 
 ### Methods modules
 - `methods/variogram_loocv.py` — Multi-lag indicator variogram + per-class LOOCV [available]
