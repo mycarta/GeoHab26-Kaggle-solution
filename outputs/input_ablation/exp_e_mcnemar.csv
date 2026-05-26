@@ -1,0 +1,4 @@
+pair,model_a,model_b,chi2,p_value,n_10_a_right_b_wrong,n_01_a_wrong_b_right,n_discordant
+e1_der vs e3_bsder,e1_der,e3_bsder,103.57443365695792,2.5079270760301497e-24,436,182,618
+e2_bs vs e3_bsder,e2_bs,e3_bsder,915.9648941662365,3.321071446083331e-201,1635,302,1937
+e1_der vs e2_bs,e1_der,e2_bs,559.5012036591237,1.079255041675853e-123,499,1578,2077

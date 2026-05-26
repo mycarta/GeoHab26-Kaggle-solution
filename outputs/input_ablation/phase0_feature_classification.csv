@@ -1,0 +1,88 @@
+column_name,source_category,extraction_method,raster_source,reference
+bathy,BATHY,direct pixel sample,bathymetry.tif,Stage 1 §0 center pixel
+backscatter,BS,direct pixel sample,backscatter.tif,Stage 1 §0 center pixel
+slope,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+profile_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+plan_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+max_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+min_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+mean_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+tangential_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+total_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+gaussian_curvature,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+ruggedness_index,BATHY,WbW single-scale derivative,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+geomorphons,BATHY,WbW landform classification,bathymetry.tif,CLAUDE.md WbW single-scale categorical
+pennock,BATHY,WbW landform classification,bathymetry.tif,CLAUDE.md WbW single-scale categorical
+northness,BATHY,cos of aspect from bathy,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+eastness,BATHY,sin of aspect from bathy,bathymetry.tif,CLAUDE.md WbW single-scale continuous
+devmax_local,BATHY,WbW multi-scale DEV (3-20),bathymetry.tif,CLAUDE.md WbW multi-scale
+devmax_local_scale,BATHY,WbW multi-scale DEV scale (3-20),bathymetry.tif,CLAUDE.md WbW multi-scale
+devmax_meso,BATHY,WbW multi-scale DEV (20-200),bathymetry.tif,CLAUDE.md WbW multi-scale
+devmax_meso_scale,BATHY,WbW multi-scale DEV scale (20-200),bathymetry.tif,CLAUDE.md WbW multi-scale
+devmax_broad,BATHY,WbW multi-scale DEV (200-1000),bathymetry.tif,CLAUDE.md WbW multi-scale
+devmax_broad_scale,BATHY,WbW multi-scale DEV scale (200-1000),bathymetry.tif,CLAUDE.md WbW multi-scale
+multiscale_roughness,BATHY,WbW multi-scale roughness (3-200),bathymetry.tif,CLAUDE.md WbW multi-scale
+multiscale_roughness_scale,BATHY,WbW multi-scale roughness scale (3-200),bathymetry.tif,CLAUDE.md WbW multi-scale
+ms_maxcurv,BATHY,WbW multi-scale max curvature,bathymetry.tif,CLAUDE.md WbW multi-scale
+dist_to_shore,SPATIAL,EDT from shore polygon (shore derived from bathy depth threshold -16 m),bathymetry.tif (for shore polygon),CLAUDE.md note + stage1_features.py compute_dist_to_shore
+bathy_focal_mean_w3,BATHY,scipy uniform_filter on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_std_w3,BATHY,focal std on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_range_w3,BATHY,focal max-min on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_mean_w7,BATHY,scipy uniform_filter on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_std_w7,BATHY,focal std on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_range_w7,BATHY,focal max-min on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_mean_w11,BATHY,scipy uniform_filter on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_std_w11,BATHY,focal std on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_range_w11,BATHY,focal max-min on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_mean_w21,BATHY,scipy uniform_filter on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_std_w21,BATHY,focal std on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_range_w21,BATHY,focal max-min on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_mean_w41,BATHY,scipy uniform_filter on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_std_w41,BATHY,focal std on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bathy_focal_range_w41,BATHY,focal max-min on bathy,bathymetry.tif,CLAUDE.md bathy focal stats
+bs_focal_mean_w3,BS,scipy uniform_filter on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_std_w3,BS,focal std on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_range_w3,BS,focal max-min on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_mean_w7,BS,scipy uniform_filter on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_std_w7,BS,focal std on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_range_w7,BS,focal max-min on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_mean_w11,BS,scipy uniform_filter on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_std_w11,BS,focal std on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_range_w11,BS,focal max-min on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_mean_w21,BS,scipy uniform_filter on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_std_w21,BS,focal std on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_range_w21,BS,focal max-min on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_mean_w41,BS,scipy uniform_filter on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_std_w41,BS,focal std on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_focal_range_w41,BS,focal max-min on BS,backscatter.tif,CLAUDE.md BS focal stats
+bs_rank_entropy_r3,BS,skimage rank entropy on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_gradient_r3,BS,skimage rank gradient on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_entropy_r7,BS,skimage rank entropy on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_gradient_r7,BS,skimage rank gradient on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_entropy_r11,BS,skimage rank entropy on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_gradient_r11,BS,skimage rank gradient on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_entropy_r17,BS,skimage rank entropy on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_gradient_r17,BS,skimage rank gradient on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_entropy_r25,BS,skimage rank entropy on BS,backscatter.tif,CLAUDE.md BS rank texture
+bs_rank_gradient_r25,BS,skimage rank gradient on BS,backscatter.tif,CLAUDE.md BS rank texture
+hsi_hue,BS,HSI decomposition of BS (high-pass/low-pass),backscatter.tif,Che Hasan 2014 PhD thesis (CLAUDE.md)
+hsi_saturation,BS,HSI decomposition of BS (high-pass/low-pass),backscatter.tif,Che Hasan 2014 PhD thesis (CLAUDE.md)
+hsi_intensity,BS,HSI decomposition of BS (high-pass/low-pass),backscatter.tif,Che Hasan 2014 PhD thesis (CLAUDE.md)
+glcm_homogeneity_p7,BS,GLCM on quantized BS (uint8 [-45 -5] dB clip),backscatter.tif,CLAUDE.md GLCM texture
+glcm_contrast_p7,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_correlation_p7,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_energy_p7,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_homogeneity_p15,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_contrast_p15,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_correlation_p15,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_energy_p15,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_homogeneity_p25,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_contrast_p25,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_correlation_p25,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+glcm_energy_p25,BS,GLCM on quantized BS,backscatter.tif,CLAUDE.md GLCM texture
+mstp_band1,BATHY,WbW multiscale_topographic_position_image (3-band RGB),bathymetry.tif,Lindsay 2023 (CLAUDE.md)
+mstp_band2,BATHY,WbW multiscale_topographic_position_image (3-band RGB),bathymetry.tif,Lindsay 2023 (CLAUDE.md)
+mstp_band3,BATHY,WbW multiscale_topographic_position_image (3-band RGB),bathymetry.tif,Lindsay 2023 (CLAUDE.md)
+mstp_std,BATHY,std of [devmax_local devmax_meso devmax_broad] per pixel,bathymetry.tif,Lindsay 2023 (CLAUDE.md)
+bathy_canny_dist,BATHY,distance_transform_edt(~auto_canny(bathy_uint8)) * 0.25 m,bathymetry.tif,Rosebrock 2015 + scipy EDT (CLAUDE.md)
+acr_sapa_w21,BATHY,ACR Surface-Area-to-Planar-Area ratio w=21 on bathy,bathymetry.tif (destriped via Median 5x5),Ierodiaconou 2018 family rugosity (acr_rugosity.ipynb)
